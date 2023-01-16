@@ -50,11 +50,22 @@ function getLineClamp(lineClamp) {
   }
   return null;
 }
+function getTruncate(truncate) {
+  if (truncate) {
+    return {
+      overflow: "hidden",
+      textOverflow: "ellipsis",
+      whiteSpace: "nowrap"
+    };
+  }
+  return null;
+}
 var useStyles = createStyles((theme, {
   color,
   variant,
   size,
   lineClamp,
+  truncate,
   inline,
   inherit,
   underline,
@@ -67,7 +78,7 @@ var useStyles = createStyles((theme, {
 }) => {
   const colors = theme.fn.variant({ variant: "gradient", gradient });
   return {
-    root: __spreadValues(__spreadProps(__spreadValues(__spreadValues(__spreadValues({}, theme.fn.fontStyles()), theme.fn.focusStyles()), getLineClamp(lineClamp)), {
+    root: __spreadValues(__spreadProps(__spreadValues(__spreadValues(__spreadValues(__spreadValues({}, theme.fn.fontStyles()), theme.fn.focusStyles()), getLineClamp(lineClamp)), getTruncate(truncate)), {
       color: getTextColor({ color, theme, variant }),
       fontFamily: inherit ? "inherit" : theme.fontFamily,
       fontSize: inherit || size === void 0 ? "inherit" : theme.fn.size({ size, sizes: theme.fontSizes }),

@@ -89,7 +89,7 @@ function TooltipFloating(props) {
     offset,
     position
   });
-  const { classes, cx } = useStyles({ radius, color, multiline, width }, { name: "Tooltip", classNames, styles, unstyled });
+  const { classes, cx } = useStyles({ radius, color, multiline, width }, { name: "TooltipFloating", classNames, styles, unstyled });
   if (!isElement(children)) {
     throw new Error(TOOLTIP_ERRORS.children);
   }

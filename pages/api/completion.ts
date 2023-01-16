@@ -22,5 +22,6 @@ export default async function handler(
   const body = req.body as CreateCompletionRequest;
 
   const completion = await openai.createCompletion(body);
+  console.log(completion);
   res.status(200).json(completion.data);
 }

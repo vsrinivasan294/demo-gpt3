@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineColor, Selectors, MantineNumberSize } from '@mantine/styles';
 import useStyles, { NotificationStylesParams } from './Notification.styles';
-export declare type NotificationStylesNames = Exclude<Selectors<typeof useStyles>, 'withIcon'>;
+export type NotificationStylesNames = Exclude<Selectors<typeof useStyles>, 'withIcon'>;
 export interface NotificationProps extends DefaultProps<NotificationStylesNames, NotificationStylesParams>, Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
     /** Called when close button is clicked */
     onClose?(): void;

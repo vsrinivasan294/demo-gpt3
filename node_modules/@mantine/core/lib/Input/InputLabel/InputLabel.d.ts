@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
 import useStyles, { InputLabelStylesParams } from './InputLabel.styles';
-export declare type InputLabelStylesNames = Selectors<typeof useStyles>;
+export type InputLabelStylesNames = Selectors<typeof useStyles>;
 export interface InputLabelProps extends DefaultProps<InputLabelStylesNames, InputLabelStylesParams>, React.ComponentPropsWithoutRef<'label'> {
     /** Label content */
     children?: React.ReactNode;

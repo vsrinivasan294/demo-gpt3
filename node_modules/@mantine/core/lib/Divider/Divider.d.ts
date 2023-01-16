@@ -1,6 +1,6 @@
 import React from 'react';
 import { DefaultProps, MantineNumberSize, MantineColor } from '@mantine/styles';
-export declare type DividerStylesNames = 'label';
+export type DividerStylesNames = 'label';
 export interface DividerProps extends DefaultProps<DividerStylesNames>, React.ComponentPropsWithoutRef<'div'> {
     /** Line color from theme, defaults to gray in light color scheme and to dark in dark color scheme */
     color?: MantineColor;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
 import useStyles, { InputErrorStylesParams } from './InputError.styles';
-export declare type InputErrorStylesNames = Selectors<typeof useStyles>;
+export type InputErrorStylesNames = Selectors<typeof useStyles>;
 export interface InputErrorProps extends DefaultProps<InputErrorStylesNames, InputErrorStylesParams>, React.ComponentPropsWithoutRef<'div'> {
     /** Error content */
     children?: React.ReactNode;

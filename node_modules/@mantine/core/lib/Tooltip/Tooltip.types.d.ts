@@ -2,7 +2,7 @@
 import { DefaultProps, Selectors, MantineNumberSize, MantineColor } from '@mantine/styles';
 import { FloatingPosition } from '../Floating';
 import useStyles, { TooltipStylesParams } from './Tooltip.styles';
-export declare type TooltipStylesNames = Selectors<typeof useStyles>;
+export type TooltipStylesNames = Selectors<typeof useStyles>;
 export interface TooltipBaseProps extends DefaultProps<TooltipStylesNames, TooltipStylesParams>, React.ComponentPropsWithoutRef<'div'> {
     /** Target element */
     children: React.ReactNode;

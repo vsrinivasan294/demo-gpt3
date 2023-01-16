@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineColor, MantineNumberSize, Selectors } from '@mantine/styles';
 import useStyles, { NavLinkStylesParams } from './NavLink.styles';
-export declare type NavLinkStylesNames = Selectors<typeof useStyles>;
+export type NavLinkStylesNames = Selectors<typeof useStyles>;
 export interface NavLinkProps extends DefaultProps<NavLinkStylesNames, NavLinkStylesParams> {
     /** Main link content */
     label?: React.ReactNode;

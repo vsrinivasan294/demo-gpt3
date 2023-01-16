@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineNumberSize, Selectors } from '@mantine/styles';
 import useStyles, { BurgerStylesParams } from './Burger.styles';
-export declare type BurgerStylesNames = Selectors<typeof useStyles>;
+export type BurgerStylesNames = Selectors<typeof useStyles>;
 export interface BurgerProps extends DefaultProps<BurgerStylesNames, BurgerStylesParams>, React.ComponentPropsWithoutRef<'button'> {
     /** Burger state: true for cross, false for burger */
     opened: boolean;

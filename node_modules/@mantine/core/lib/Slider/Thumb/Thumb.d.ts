@@ -2,7 +2,7 @@ import React from 'react';
 import { DefaultProps, MantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
 import { MantineTransition } from '../../Transition';
 import useStyles from './Thumb.styles';
-export declare type ThumbStylesNames = Selectors<typeof useStyles>;
+export type ThumbStylesNames = Selectors<typeof useStyles>;
 export interface ThumbProps extends DefaultProps<ThumbStylesNames> {
     max: number;
     min: number;

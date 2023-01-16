@@ -3,7 +3,7 @@ import { DefaultProps, Selectors, MantineStyleSystemSize } from '@mantine/styles
 import { MantineTransition } from '../Transition';
 import { PaperProps } from '../Paper';
 import useStyles, { DialogStylesParams } from './Dialog.styles';
-export declare type DialogStylesNames = Selectors<typeof useStyles>;
+export type DialogStylesNames = Selectors<typeof useStyles>;
 export interface DialogProps extends Omit<DefaultProps<DialogStylesNames, DialogStylesParams>, MantineStyleSystemSize>, Omit<PaperProps, 'classNames' | 'styles'> {
     /** Display close button at the top right corner */
     withCloseButton?: boolean;

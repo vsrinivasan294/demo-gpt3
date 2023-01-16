@@ -2,7 +2,7 @@ import React from 'react';
 import { DefaultProps } from '@mantine/styles';
 import { TextareaProps } from '../Textarea';
 import { TextInputStylesNames } from '../TextInput';
-export declare type JsonInputStylesNames = TextInputStylesNames;
+export type JsonInputStylesNames = TextInputStylesNames;
 export interface JsonInputProps extends DefaultProps<JsonInputStylesNames>, Omit<TextareaProps, 'onChange'> {
     /** Value for controlled input */
     value?: string;

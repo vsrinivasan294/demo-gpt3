@@ -2,7 +2,7 @@ import React from 'react';
 import { DefaultProps, MantineNumberSize, MantineColor, Selectors, MantineGradient } from '@mantine/styles';
 import useStyles, { ActionIconVariant, ActionIconStylesParams } from './ActionIcon.styles';
 import { LoaderProps } from '../Loader';
-export declare type ActionIconStylesNames = Selectors<typeof useStyles>;
+export type ActionIconStylesNames = Selectors<typeof useStyles>;
 export interface ActionIconProps extends DefaultProps<ActionIconStylesNames, ActionIconStylesParams> {
     /** Icon */
     children?: React.ReactNode;
