@@ -3,7 +3,7 @@ import { DefaultProps, MantineNumberSize, MantineSize, MantineColor, Selectors }
 import { ForwardRefWithStaticComponents } from '@mantine/utils';
 import { ChipGroup } from './ChipGroup/ChipGroup';
 import useStyles, { ChipStylesParams } from './Chip.styles';
-export declare type ChipStylesNames = Selectors<typeof useStyles>;
+export type ChipStylesNames = Selectors<typeof useStyles>;
 export interface ChipProps extends DefaultProps<ChipStylesNames, ChipStylesParams>, Omit<React.ComponentPropsWithRef<'input'>, 'size' | 'onChange'> {
     /** Chip radius from theme or number to set value in px */
     radius?: MantineNumberSize;
@@ -28,7 +28,7 @@ export interface ChipProps extends DefaultProps<ChipStylesNames, ChipStylesParam
     /** Props spread to wrapper element */
     wrapperProps?: Record<string, any>;
 }
-declare type ChipComponent = ForwardRefWithStaticComponents<ChipProps, {
+type ChipComponent = ForwardRefWithStaticComponents<ChipProps, {
     Group: typeof ChipGroup;
 }>;
 export declare const Chip: ChipComponent;

@@ -1,7 +1,7 @@
 /// <reference types="react" />
 import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
 import useStyles from './Thumb.styles';
-export declare type ThumbStylesNames = Selectors<typeof useStyles>;
+export type ThumbStylesNames = Selectors<typeof useStyles>;
 interface Position {
     x: number;
     y: number;

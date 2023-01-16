@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineSize, MantineNumberSize, MantineGradient, MantineColor, Selectors } from '@mantine/styles';
 import useStyles, { BadgeStylesParams, BadgeVariant } from './Badge.styles';
-export declare type BadgeStylesNames = Selectors<typeof useStyles>;
+export type BadgeStylesNames = Selectors<typeof useStyles>;
 export interface BadgeProps extends DefaultProps<BadgeStylesNames, BadgeStylesParams> {
     /** Key of theme.colors */
     color?: MantineColor;

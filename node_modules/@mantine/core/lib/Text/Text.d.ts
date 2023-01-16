@@ -17,6 +17,8 @@ export interface TextProps extends DefaultProps {
     variant?: 'text' | 'link' | 'gradient';
     /** CSS -webkit-line-clamp property */
     lineClamp?: number;
+    /** CSS truncate overflowing text with an ellipsis */
+    truncate?: boolean;
     /** Sets line-height to 1 for centering */
     inline?: boolean;
     /** Underline the text */
@@ -38,7 +40,6 @@ export declare const Text: (<C = "div">(props: import("@mantine/utils").Polymorp
 } & Omit<Pick<any, string | number | symbol>, "component" | keyof TextProps> & {
     ref?: any;
 }) | (TextProps & {
-    /** Inherit font properties from parent element */
     component: React.ElementType<any>;
 })>, never> & Record<string, never>;
 //# sourceMappingURL=Text.d.ts.map

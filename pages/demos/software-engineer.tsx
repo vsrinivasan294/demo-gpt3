@@ -50,6 +50,7 @@ export default function Chatbot() {
   const onSubmit = async (values: FormValues) => {
     setLoading(true);
     const request = generatePrompt(values, conversation);
+    console.log(request);
     setOpenaiRequest(request);
     await getCompletion(request).then((completion) => {
       const completionText = completion && completion.choices && completion.choices[0].text?.trim();

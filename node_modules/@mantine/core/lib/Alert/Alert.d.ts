@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, MantineColor, Selectors, MantineNumberSize } from '@mantine/styles';
 import useStyles, { AlertStylesParams, AlertVariant } from './Alert.styles';
-export declare type AlertStylesNames = Selectors<typeof useStyles>;
+export type AlertStylesNames = Selectors<typeof useStyles>;
 export interface AlertProps extends DefaultProps<AlertStylesNames, AlertStylesParams>, Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
     /** Alert title */
     title?: React.ReactNode;

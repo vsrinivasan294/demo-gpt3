@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, Selectors } from '@mantine/styles';
 import useStyles, { SpoilerStylesParams } from './Spoiler.styles';
-export declare type SpoilerStylesNames = Selectors<typeof useStyles>;
+export type SpoilerStylesNames = Selectors<typeof useStyles>;
 export interface SpoilerProps extends DefaultProps<SpoilerStylesNames, SpoilerStylesParams>, React.ComponentPropsWithoutRef<'div'> {
     /** Max height of visible content, when this point is reached spoiler appears */
     maxHeight: number;

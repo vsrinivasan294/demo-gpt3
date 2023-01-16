@@ -2,7 +2,7 @@ import React from 'react';
 import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
 import { SelectItem } from '../types';
 import useStyles from './SelectItems.styles';
-export declare type SelectItemsStylesNames = Selectors<typeof useStyles>;
+export type SelectItemsStylesNames = Selectors<typeof useStyles>;
 export interface SelectItemsProps extends DefaultProps<SelectItemsStylesNames> {
     data: SelectItem[];
     hovered: number;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DefaultProps, Selectors } from '@mantine/styles';
 import useStyles from './Breadcrumbs.styles';
-export declare type BreadcrumbsStylesNames = Selectors<typeof useStyles>;
+export type BreadcrumbsStylesNames = Selectors<typeof useStyles>;
 export interface BreadcrumbsProps extends DefaultProps<BreadcrumbsStylesNames>, React.ComponentPropsWithoutRef<'div'> {
     /** Separator between breadcrumbs */
     separator?: React.ReactNode;

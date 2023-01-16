@@ -55,7 +55,8 @@ const _ScrollArea = forwardRef((props, ref) => {
     offsetScrollbars,
     viewportRef,
     onScrollPositionChange,
-    unstyled
+    unstyled,
+    viewportProps
   } = _a, others = __objRest(_a, [
     "children",
     "className",
@@ -68,7 +69,8 @@ const _ScrollArea = forwardRef((props, ref) => {
     "offsetScrollbars",
     "viewportRef",
     "onScrollPositionChange",
-    "unstyled"
+    "unstyled",
+    "viewportProps"
   ]);
   const [scrollbarHovered, setScrollbarHovered] = useState(false);
   const theme = useMantineTheme();
@@ -81,14 +83,14 @@ const _ScrollArea = forwardRef((props, ref) => {
     asChild: true
   }, /* @__PURE__ */ React.createElement(Box, __spreadValues({
     className: cx(classes.root, className)
-  }, others), /* @__PURE__ */ React.createElement(RadixScrollArea.Viewport, {
+  }, others), /* @__PURE__ */ React.createElement(RadixScrollArea.Viewport, __spreadProps(__spreadValues({}, viewportProps), {
     className: classes.viewport,
     ref: viewportRef,
     onScroll: typeof onScrollPositionChange === "function" ? ({ currentTarget }) => onScrollPositionChange({
       x: currentTarget.scrollLeft,
       y: currentTarget.scrollTop
     }) : void 0
-  }, children), /* @__PURE__ */ React.createElement(RadixScrollArea.Scrollbar, {
+  }), children), /* @__PURE__ */ React.createElement(RadixScrollArea.Scrollbar, {
     orientation: "horizontal",
     className: classes.scrollbar,
     forceMount: true,

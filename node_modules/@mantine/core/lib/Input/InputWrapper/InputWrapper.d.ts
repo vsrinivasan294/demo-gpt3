@@ -4,7 +4,7 @@ import { InputLabelStylesNames } from '../InputLabel/InputLabel';
 import { InputErrorStylesNames } from '../InputError/InputError';
 import { InputDescriptionStylesNames } from '../InputDescription/InputDescription';
 import useStyles from './InputWrapper.styles';
-export declare type InputWrapperStylesNames = Selectors<typeof useStyles> | InputLabelStylesNames | InputErrorStylesNames | InputDescriptionStylesNames;
+export type InputWrapperStylesNames = Selectors<typeof useStyles> | InputLabelStylesNames | InputErrorStylesNames | InputDescriptionStylesNames;
 export interface InputWrapperBaseProps {
     /** Input label, displayed before input */
     label?: React.ReactNode;

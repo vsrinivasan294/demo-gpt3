@@ -2,7 +2,7 @@ import React from 'react';
 import { DefaultProps, MantineNumberSize, MantineColor, Selectors, MantineGradient } from '@mantine/styles';
 import { AvatarGroup } from './AvatarGroup/AvatarGroup';
 import useStyles, { AvatarStylesParams, AvatarVariant } from './Avatar.styles';
-export declare type AvatarStylesNames = Selectors<typeof useStyles>;
+export type AvatarStylesNames = Selectors<typeof useStyles>;
 export interface AvatarProps extends DefaultProps<AvatarStylesNames, AvatarStylesParams> {
     /** Image url */
     src?: string | null;
