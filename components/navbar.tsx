@@ -29,6 +29,18 @@ const productExamples = [
     sublabel: 'Conversation',
     path: 'recipe-maker',
   },
+   {
+    icon: <IconBrandHipchat size={16} />,
+    label: 'Code Commenter',
+    sublabel: 'Conversation',
+    path: 'commenting-code',
+  },
+    {
+    icon: <IconBrandHipchat size={16} />,
+    label: 'SQL Code Generator',
+    sublabel: 'Conversation',
+    path: 'sql-generator',
+  },
 
 ];
 

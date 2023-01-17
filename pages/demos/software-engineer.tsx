@@ -100,13 +100,13 @@ export default function Chatbot() {
             </Grid.Col>
           </Grid>
 
-          { result && (
+      {/*    { result && (
             <>
               <Divider my="xs" />
               <Title order={4}>GPT-3 Prompt</Title>
               { openaiRequest && <GPTCompletion request={openaiRequest} result={result} /> }
             </>
-          )}
+          )}*/}
         </Stack>
       </form>
     </Box>
